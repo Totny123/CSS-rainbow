@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>CSS彩虹</title>
+    <style>
+      .rainbow {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: white;
+      }
+      .rainbow .cloak {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 500px;
+        height: 250px;
+        background-color: white;
+        z-index: 99;
+      }
+      .rainbow div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+      .rainbow > div {
+        width: 480px;
+        height: 480px;
+        background-color: #ff0000;
+      }
+      .rainbow > div > div {
+        width: 460px;
+        height: 460px;
+        background-color: #ff9800;
+      }
+      .rainbow > div > div > div {
+        width: 440px;
+        height: 440px;
+        background-color: #ffff00;
+      }
+      .rainbow > div > div > div > div {
+        width: 420px;
+        height: 420px;
+        background-color: #00ff00;
+      }
+      .rainbow > div > div > div > div > div {
+        width: 400px;
+        height: 400px;
+        background-color: #00ffff;
+      }
+      .rainbow > div > div > div > div > div > div {
+        width: 380px;
+        height: 380px;
+        background-color: #0000ff;
+      }
+      .rainbow > div > div > div > div > div > div > div {
+        width: 360px;
+        height: 360px;
+        background-color: #ff00ff;
+      }
+      .rainbow > div > div > div > div > div > div > div > div {
+        width: 340px;
+        height: 340px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rainbow">
+      <span class="cloak"></span>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div><div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
